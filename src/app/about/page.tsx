@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-gradient-to-b from-yellow-300 to-yellow-100">
+    <div className="relative z-0 min-h-screen overflow-hidden bg-gradient-to-b from-yellow-300 to-yellow-100">
       <svg
         className="absolute inset-0 w-full h-full"
         xmlns="http://www.w3.org/2000/svg"
