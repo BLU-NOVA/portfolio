@@ -1,6 +1,7 @@
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -45,7 +46,7 @@ export default function Home() {
             </p>
             <div className="mt-6">
               <button className="w-full sm:w-auto border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition-colors duration-300 flex rounded-full p-3 items-center justify-center">
-                Get in touch{" "}
+               <Link href="/contact-us"> Get in touch{" "}</Link>
                 <img
                   src="/arrow.svg"
                   className="w-5 h-5 ml-2 hover:animate-spin"
