@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
+import Image from 'next/image';
 
 const Testimonials: React.FC = () => {
   return (
@@ -32,22 +33,31 @@ const Testimonials: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-blue-900">Hear What They Have to Say About Us</h2>
-          <p className="mt-4 text-lg text-blue-700">Our clients love working with us, and here's what they have to say:</p>
+          {/* <h2 className="text-3xl font-bold text-blue-900">A Message from Our CEO</h2> */}
+          <p className="mt-4 text-lg text-blue-700">Discover the vision that drives BLU NOVA forward</p>
         </div>
         <div className="mt-10 max-w-4xl mx-auto bg-white bg-opacity-80 p-8 rounded-lg shadow-lg backdrop-blur-sm">
           <div className="flex justify-center mb-6 text-blue-500">
             <FaQuoteLeft className="w-6 h-6" />
           </div>
           <p className="text-xl text-blue-800 text-center">
-            "Working with the team at BLU NOVA has been a fantastic experience. Their technical expertise and commitment to delivering top-quality software solutions have transformed our operations. They truly understand the client's needs and go above and beyond to exceed expectations."
+            "At BLU NOVA, we're not just building software; we're crafting digital solutions that empower businesses to thrive in the ever-evolving technological landscape. Our commitment to innovation, coupled with our deep understanding of our clients' needs, allows us to deliver transformative results. We're not just a service provider; we're your partner in digital success."
           </p>
           <div className="flex justify-center mt-6 text-blue-500">
             <FaQuoteRight className="w-6 h-6" />
           </div>
           <div className="mt-8 text-center">
-            <p className="text-lg font-semibold text-blue-900">Amos Mwongela</p>
-            <p className="text-blue-700">Software Engineer</p>
+            <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
+              <Image 
+                src="/ceo.jpg" 
+                alt="CEO of BLU NOVA" 
+                width={96} 
+                height={96}
+                className="object-cover"
+              />
+            </div>
+            <p className="text-lg font-semibold text-blue-900">Amos Wachira</p>
+            <p className="text-blue-700 text-xs">CEO BLU NOVA</p>
           </div>
         </div>
       </div>
