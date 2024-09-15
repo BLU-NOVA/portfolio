@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
             <Link href="/services">
               <p className="text-gray-800 hover:text-blue-500">Services</p>
             </Link>
-            <Link href="/contact">
+            <Link href="/contact-us">
               <p className="text-gray-800 hover:text-blue-500">Contact</p>
             </Link>
           </div>
