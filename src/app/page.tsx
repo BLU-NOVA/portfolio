@@ -1,6 +1,7 @@
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -33,42 +34,42 @@ export default function Home() {
         />
       </svg>
 
-      <div className="relative z-10 px-36 p-3">
-        <div className="flex flex-col md:flex-row w-full">
-          <div className="md:w-[50%] w-full mt-[7rem] p-6 md:pl-6">
-            <p className="anton text-3xl sm:text-4xl  md:text-5xl lg:text-6xl pb-3 leading-tight text-blue-900">
-              Build Your Digital <br /> Solutions <br /> Effortlessly.
-            </p>
-            <p className="mt-3 text-sm sm:text-base lg:text-lg text-blue-800 ">
-              Welcome to BLU NOVA, where innovation meets excellence! <br />
+      <div className="relative z-10 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-36 py-8">
+        <div className="flex flex-col lg:flex-row w-full">
+          <div className="lg:w-1/2 w-full mt-20 sm:mt-24 lg:mt-32 p-4">
+            <h1 className="anton text-3xl sm:text-4xl md:text-5xl lg:text-6xl pb-3 leading-tight text-blue-900">
+              Build Your Digital <br className="hidden sm:inline" /> Solutions <br className="hidden sm:inline" /> Effortlessly.
+            </h1>
+            <p className="mt-3 text-sm sm:text-base lg:text-lg text-blue-800">
+              Welcome to BLU NOVA, where innovation meets excellence! <br className="hidden sm:inline" />
               We specialize in crafting cutting-edge systems, websites, and mobile apps tailored to your needs. Whether you're an organization seeking to enhance your digital presence or a personal business aiming for growth, our team of experts is here to bring your vision to life. Partner with us and experience seamless solutions that drive success in the digital world. Let's build the future together.
             </p>
-            <div className="mt-6 w-max">
-              <button className=" border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition-colors duration-300 flex rounded-full p-3 items-center justify-center">
-                Get in touch{" "}
+            <div className="mt-6">
+              <button className="w-full sm:w-auto border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition-colors duration-300 flex rounded-full p-3 items-center justify-center">
+               <Link href="/contact-us"> Get in touch{" "}</Link>
                 <img
                   src="/arrow.svg"
-                  className="w-[20px] mt-1 hover:animate-spin ml-2"
-                  alt=""
+                  className="w-5 h-5 ml-2 hover:animate-spin"
+                  alt="Arrow"
                 />
               </button>
             </div>
           </div>
 
-          <div className="md:w-[50%] w-full mt-6 md:mt-0 flex justify-center items-center">
+          <div className="lg:w-1/2 w-full mt-8 lg:mt-0 flex justify-center items-center">
             <img
               src="/Programming-rafiki.svg"
               alt="Programming-rafiki"
-              className="w-full max-w-md"
+              className="w-full max-w-md lg:max-w-lg xl:max-w-xl"
             />
           </div>
         </div>
 
-        <div className="my-10">
+        <div className="my-16">
           <Services />
         </div>
 
-        <div className="my-10">
+        <div className="my-16">
           <Testimonials />
         </div>
       </div>

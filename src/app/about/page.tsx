@@ -32,7 +32,7 @@ export default function About() {
 
       <div className="relative z-10 p-6">
         <section className="mt-16 bg-gradient-to-r from-blue-400 to-blue-600 text-white p-12 rounded-lg text-center mb-12 shadow-lg backdrop-blur-sm bg-opacity-80">
-          <h1 className="text-5xl font-bold mb-6">About BLU NOVA</h1>
+          <h1 className="text-4xl font-bold mb-6">What We Are About </h1>
           <p className="text-lg leading-relaxed">
             Blu Nova is an organization that helps you bring your ideas and products to the online world. We aim to make global digital transformation easy by automating repetitive tasks and enabling you to focus on creativity and growth. Our suite of tools and services, from ecommerce to product management, is designed to streamline your business processes and enhance your productivity.
           </p>

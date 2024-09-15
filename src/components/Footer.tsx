@@ -3,32 +3,29 @@ import { FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-blue-800 py-8 text-white">
+    <footer className="bg-[#3B82F6] py-8 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main footer content */}
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start space-y-6 md:space-y-0 md:space-x-6">
           
           {/* Logo & Description */}
           <div className="text-center md:text-left">
-            {/* Uncomment this if you have a logo image */}
             {/* <img src="/BLU-BG-LESS.png" alt="logo" className='w-[50px]' /> */}
             <div className="text-lg font-bold">BLU NOVA</div>
-            <p className="mt-2 text-sm text-gray-400">
+            <p className="mt-2 text-sm text-white">
               Delivering innovative tech solutions <br />
               and system integration services <br />
               tailored for your business needs.
             </p>
           </div>
 
-          {/* Navigation Links */}
           <div className="flex flex-col space-y-2 md:space-y-0 md:flex-row md:space-x-6 text-center md:text-left">
-            <a href="/services" className="hover:underline">Services</a>
+            <a href="/#services" className="hover:underline">Services</a>
             <a href="/about" className="hover:underline">About Us</a>
             <a href="/contact" className="hover:underline">Contact</a>
-            <a href="/blog" className="hover:underline">Blog</a>
+            <a href="#" className="hover:underline">Blog</a>
           </div>
           
-          {/* Social Icons */}
           <div className="flex space-x-4 justify-center md:justify-start">
             <a href="https://twitter.com/blunovatech" aria-label="Twitter" target="_blank" rel="noopener noreferrer" className="hover:text-green-500">
               <FaTwitter className="w-5 h-5" />
@@ -42,11 +39,9 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Divider */}
-        <div className="border-t border-gray-700 my-6"></div>
+        <div className="border-t border-white my-6"></div>
 
-        {/* Footer Bottom */}
-        <div className="text-center text-gray-400 text-sm">
+        <div className="text-center text-white text-sm">
           &copy; {new Date().getFullYear()} BLU NOVA. All rights reserved.
         </div>
       </div>
