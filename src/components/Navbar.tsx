@@ -1,11 +1,9 @@
 "use client"
-import { useState, useEffect } from 'react';
+import { useState,  } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);

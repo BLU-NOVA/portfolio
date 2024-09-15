@@ -85,8 +85,8 @@ const ContactUs = () => {
 
             <div className="relative z-10 p-6 sm:p-8 md:p-12 lg:p-16 xl:p-20">
                 <div className="bg-white rounded-lg shadow-lg p-6 sm:p-8 md:p-10 lg:p-12 mt-20 sm:mx-4 md:mx-8 lg:mx-16 xl:mx-36">
-                    <h1 className="text-3xl font-bold mb-6 text-blue-600">Let's Connect!</h1>
-                    <p className="text-lg text-gray-600 mb-8">Ready to turn your ideas into reality? We're just a message away from creating something extraordinary together!</p>
+                    <h1 className="text-3xl font-bold mb-6 text-blue-600">Let&apos;s Connect!</h1>
+                    <p className="text-lg text-gray-600 mb-8">Ready to turn your ideas into reality? We&apos;re just a message away from creating something extraordinary together!</p>
                     <div className="flex flex-col lg:flex-row mb-6 gap-8">
                         <div className="w-full lg:w-1/2 mb-6 lg:mb-0 bg-gradient-to-br from-blue-50 to-white rounded-lg p-6 shadow-md">
                             <form onSubmit={handleSubmit} className="space-y-6">
@@ -193,8 +193,8 @@ const ContactUs = () => {
                         </div>
                         <div className="w-full lg:w-1/2 px-3">
                             <div className="mb-8">
-                                <h2 className="text-2xl font-bold mb-4 text-blue-600">Let's Create Something Amazing</h2>
-                                <p className="text-gray-600 mb-6">Have an idea that needs bringing to life? We're here to turn your vision into reality. Our team of experts is ready to collaborate with you on your next big project.</p>
+                                <h2 className="text-2xl font-bold mb-4 text-blue-600">Let&apos;s Create Something Amazing</h2>
+                                <p className="text-gray-600 mb-6">Have an idea that needs bringing to life? We&apos;re here to turn your vision into reality. Our team of experts is ready to collaborate with you on your next big project.</p>
                                 <div className="space-y-4">
                                     <div className="flex items-center p-4 bg-blue-50 rounded-lg shadow-sm transition duration-300 hover:bg-blue-100">
                                         <div className="bg-blue-500 p-2 rounded-full mr-4">
