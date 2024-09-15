@@ -29,8 +29,10 @@
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   },
-  "rules": {
-    "@typescript-eslint/no-explicit-any": "off"
-}
-
+  "eslintConfig": {
+    "extends": "next/core-web-vitals",
+    "rules": {
+      "@typescript-eslint/no-explicit-any": "off"
+    }
+  }
 }

@@ -33,11 +33,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="description" content={metadata.description||""} />
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         <meta name="keywords" content={metadata.keywords as any} />
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         <meta name="author" content={metadata.authors as any} />
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         <meta name="robots" content={metadata.robots as any} />
         <meta property="og:title" content="BLU NOVA - Building Tomorrow Today!" />
         <meta property="og:description" content="Discover innovative solutions and futuristic technology at BLU NOVA." />
