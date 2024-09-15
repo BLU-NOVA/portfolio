@@ -33,7 +33,7 @@ export default function Home() {
         />
       </svg>
 
-      <div className="relative z-10 p-3">
+      <div className="relative z-10 px-36 p-3">
         <div className="flex flex-col md:flex-row w-full">
           <div className="md:w-[50%] w-full mt-[7rem] p-6 md:pl-6">
             <p className="anton text-3xl sm:text-4xl  md:text-5xl lg:text-6xl pb-3 leading-tight text-blue-900">
