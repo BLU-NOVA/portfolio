@@ -47,7 +47,7 @@ const Testimonials: React.FC = () => {
           </div>
           <div className="mt-8 text-center">
             <p className="text-lg font-semibold text-blue-900">Amos Mwongela</p>
-            <p className="text-blue-700">Software Engineer at Pesira</p>
+            <p className="text-blue-700">Software Engineer</p>
           </div>
         </div>
       </div>

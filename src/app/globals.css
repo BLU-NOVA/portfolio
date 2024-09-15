@@ -3,6 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+  }
 .anton {
     font-family: "Anton", sans-serif;
     font-weight: 400;
