@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-gradient-to-b from-yellow-300 to-yellow-100">
+    <div className="relative z-0 min-h-screen overflow-hidden bg-gradient-to-b from-blue-300 to-blue-100">
       <svg
         className="absolute inset-0 w-full h-full"
         xmlns="http://www.w3.org/2000/svg"
@@ -13,12 +13,12 @@ export default function About() {
       >
         <defs>
           <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" style={{ stopColor: '#FFC107', stopOpacity: 1 }} />
-            <stop offset="100%" style={{ stopColor: '#FFD54F', stopOpacity: 1 }} />
+            <stop offset="0%" style={{ stopColor: '#7babef', stopOpacity: 1 }} />
+            <stop offset="100%" style={{ stopColor: '#4fb0ff', stopOpacity: 1 }} />
           </linearGradient>
           <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" style={{ stopColor: '#FFD54F', stopOpacity: 1 }} />
-            <stop offset="100%" style={{ stopColor: '#FFFFFF', stopOpacity: 1 }} />
+            <stop offset="0%" style={{ stopColor: '#16aae9', stopOpacity: 1 }} />
+            <stop offset="100%" style={{ stopColor: '#297af4', stopOpacity: 1 }} />
           </linearGradient>
         </defs>
         
@@ -39,7 +39,7 @@ export default function About() {
         </section>
 
         <section className="my-12 text-center">
-          <h2 className="text-4xl font-semibold mb-6 text-gray-800">Our Mission</h2>
+          <h2 className="text-4xl font-semibold mb-6 text-white">Our Mission</h2>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -53,7 +53,7 @@ export default function About() {
         </section>
 
         <section className="my-12 text-center">
-          <h2 className="text-4xl font-semibold mb-6 text-gray-800">Our Core Values</h2>
+          <h2 className="text-4xl font-semibold mb-6 text-white">Our Core Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <motion.div
               whileHover={{ scale: 1.05 }}
