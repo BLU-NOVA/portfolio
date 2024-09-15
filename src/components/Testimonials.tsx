@@ -5,7 +5,6 @@ import Image from 'next/image';
 const Testimonials: React.FC = () => {
   return (
     <section className="py-12 relative overflow-hidden">
-      {/* SVG Background */}
       <svg
         className="absolute inset-0 w-full h-full"
         xmlns="http://www.w3.org/2000/svg"
@@ -20,10 +19,8 @@ const Testimonials: React.FC = () => {
           </linearGradient>
         </defs>
         
-        {/* Gradient background */}
         <path fill="url(#grad1)" d="M0 0h1440v400H0z" />
         
-        {/* Curved shape */}
         <path 
           fill="#FFFFFF" 
           fillOpacity="0.3"
@@ -41,7 +38,7 @@ const Testimonials: React.FC = () => {
             <FaQuoteLeft className="w-6 h-6" />
           </div>
           <p className="text-xl text-blue-800 text-center">
-            "At BLU NOVA, we're not just building software; we're crafting digital solutions that empower businesses to thrive in the ever-evolving technological landscape. Our commitment to innovation, coupled with our deep understanding of our clients' needs, allows us to deliver transformative results. We're not just a service provider; we're your partner in digital success."
+            &quot;At BLU NOVA, we&apos;re not just building software; we&apos;re crafting digital solutions that empower businesses to thrive in the ever-evolving technological landscape. Our commitment to innovation, coupled with our deep understanding of our clients&apos; needs, allows us to deliver transformative results. We&apos;re not just a service provider; we&apos;re your partner in digital success.&quot;
           </p>
           <div className="flex justify-center mt-6 text-blue-500">
             <FaQuoteRight className="w-6 h-6" />
