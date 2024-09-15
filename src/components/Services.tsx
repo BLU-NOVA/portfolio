@@ -52,7 +52,7 @@ const Services: React.FC = () => {
         <meta name="twitter:image:alt" content="Our services include web development, mobile apps, and more at BLU NOVA." />
       </Head>
 
-      <section className="py-12 relative overflow-hidden bg-gradient-to-b from-blue-50 to-white">
+      <section className="py-12 relative overflow-hidden bg-gradient-to-b from-blue-50 to-white" id="services">
         {/* SVG Background */}
         <svg
           className="absolute inset-0 w-full h-full"
