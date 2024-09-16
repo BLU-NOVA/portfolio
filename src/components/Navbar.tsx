@@ -50,19 +50,19 @@ const Navbar: React.FC = () => {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden bg-blue-500 bg-opacity-80 shadow-md">
+        <div className="md:hidden bg-white bg-opacity-80 shadow-md">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link href="/">
-              <p className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-gray-200">Home</p>
+              <p className="block px-3 py-2 rounded-md text-base font-medium text-blue-500 hover:text-black">Home</p>
             </Link>
             <Link href="/about">
-              <p className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-gray-200">About</p>
+              <p className="block px-3 py-2 rounded-md text-base font-medium text-blue-500 hover:text-black">About</p>
             </Link>
             <Link href="#services">
-              <p className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-gray-200">Services</p>
+              <p className="block px-3 py-2 rounded-md text-base font-medium text-blue-500 hover:text-black">Services</p>
             </Link>
-            <Link href="/contact">
-              <p className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-gray-200">Contact</p>
+            <Link href="/contact-us">
+              <p className="block px-3 py-2 rounded-md text-base font-medium text-blue-500 hover:text-black-500">Contact</p>
             </Link>
           </div>
         </div>

@@ -6,15 +6,18 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export",
+    "deploy": "npm run build && npm run export && npm run deploy-gh"
+
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "framer-motion": "^11.5.4",
     "lucide-react": "^0.441.0",
-    "next": "14.2.9",
-    "react": "^18",
-    "react-dom": "^18",
+    "next": "^14.2.9",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-google-recaptcha": "^3.1.0",
     "react-icons": "^5.3.0"
   },
