@@ -9,7 +9,6 @@
     "lint": "next lint",
     "export": "next export",
     "deploy": "npm run build && npm run export && npm run deploy-gh"
-
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
