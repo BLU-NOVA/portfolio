@@ -1,90 +1,218 @@
-"use client"
-import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { Target, Eye, Heart, Lightbulb, Shield, Award, Handshake } from "lucide-react"
+import Link from "next/link"
 
-export default function About() {
+export default function AboutPage() {
+  const values = [
+    {
+      icon: Lightbulb,
+      title: "Innovation",
+      description: "We constantly push boundaries and embrace new technologies to deliver cutting-edge solutions.",
+    },
+    {
+      icon: Shield,
+      title: "Integrity",
+      description: "We maintain the highest ethical standards in all our business dealings and relationships.",
+    },
+    {
+      icon: Award,
+      title: "Excellence",
+      description: "We strive for perfection in every project, ensuring quality that exceeds expectations.",
+    },
+    {
+      icon: Handshake,
+      title: "Collaboration",
+      description: "We believe in the power of teamwork and building strong partnerships with our clients.",
+    },
+    {
+      icon: Heart,
+      title: "Customer Centricity",
+      description: "Our clients' success is our success. We put their needs at the center of everything we do.",
+    },
+  ]
+
+  const team = [
+    {
+      name: "Amos Wachira",
+      role: "CEO / Lead Strategist",
+      responsibilities: "Business direction, branding, client communication",
+      image: "/placeholder.svg?height=300&width=300",
+    },
+    {
+      name: "Amos Mwongela",
+      role: "CTO",
+      responsibilities: "Tech architecture, DevOps, reviews, code quality",
+      image: "/placeholder.svg?height=300&width=300",
+    },
+    {
+      name: "Erick Wachuma",
+      role: "Lead Developer",
+      responsibilities: "Feature development, client deployment, integrations",
+      image: "/placeholder.svg?height=300&width=300",
+    },
+  ]
+
   return (
-    <div className="relative z-0 min-h-screen overflow-hidden bg-gradient-to-b from-blue-300 to-blue-100">
-      <svg
-        className="absolute inset-0 w-full h-full"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlnsXlink="http://www.w3.org/1999/xlink"
-        viewBox="0 0 1440 800"
-        preserveAspectRatio="none"
-      >
-        <defs>
-          <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" style={{ stopColor: '#7babef', stopOpacity: 1 }} />
-            <stop offset="100%" style={{ stopColor: '#4fb0ff', stopOpacity: 1 }} />
-          </linearGradient>
-          <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" style={{ stopColor: '#16aae9', stopOpacity: 1 }} />
-            <stop offset="100%" style={{ stopColor: '#297af4', stopOpacity: 1 }} />
-          </linearGradient>
-        </defs>
-        
-        <path fill="url(#grad1)" d="M0 0h1440v800H0z" />
-        
-        <path 
-          fill="url(#grad2)" 
-          d="M0,400 C320,360 480,480 720,440 C960,400 1120,320 1440,400 V800 H0 V400 Z"
-        />
-      </svg>
-
-      <div className="relative z-10 p-6">
-        <section className="mt-16 bg-gradient-to-r from-blue-400 to-blue-600 text-white p-12 rounded-lg text-center mb-12 shadow-lg backdrop-blur-sm bg-opacity-80">
-          <h1 className="text-4xl font-bold mb-6">What We Are About </h1>
-          <p className="text-lg leading-relaxed">
-            Blu Nova is an organization that helps you bring your ideas and products to the online world. We aim to make global digital transformation easy by automating repetitive tasks and enabling you to focus on creativity and growth. Our suite of tools and services, from ecommerce to product management, is designed to streamline your business processes and enhance your productivity.
-          </p>
-        </section>
-
-        <section className="my-12 text-center">
-          <h2 className="text-4xl font-semibold mb-6 text-white">Our Mission</h2>
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            className="flex flex-col md:flex-row items-center justify-center gap-10"
-          >
-            <p className="text-lg max-w-lg leading-relaxed text-gray-700 bg-white bg-opacity-70 backdrop-blur-sm p-6 rounded-lg">
-              At Blu Nova, our mission is to empower businesses of all sizes to thrive in the digital era. We believe in the power of innovation, and we are committed to providing tools that simplify your workflow and expand your reach.
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="bg-gradient-to-br from-blue-50 to-blue-100 text-gray-900 py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <Badge className="mb-6 bg-blue-100 text-blue-700 hover:bg-amber-400">About BLU-NOVA Tech Company</Badge>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+              Software. Strategy.
+              <span className="text-amber-400 block">Success</span>
+            </h1>
+            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+              Founded by three passionate co-founders, we&apos;re on a mission to transform businesses across Africa with
+              innovative, scalable digital solutions.
             </p>
-          </motion.div>
-        </section>
-
-        <section className="my-12 text-center">
-          <h2 className="text-4xl font-semibold mb-6 text-white">Our Core Values</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="bg-white shadow-lg rounded-lg p-6 bg-opacity-70 backdrop-blur-sm"
-            >
-              <h3 className="text-2xl font-bold mb-4 text-blue-500">Innovation</h3>
-              <p className="text-lg text-gray-600">
-                We lead with innovation, ensuring that our solutions are always at the forefront of technology to meet the needs of tomorrow.
-              </p>
-            </motion.div>
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="bg-white shadow-lg rounded-lg p-6 bg-opacity-70 backdrop-blur-sm"
-            >
-              <h3 className="text-2xl font-bold mb-4 text-blue-500">Integrity</h3>
-              <p className="text-lg text-gray-600">
-                Honesty and transparency are at the heart of our work. We build trust with our clients by delivering on our promises with integrity.
-              </p>
-            </motion.div>
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="bg-white shadow-lg rounded-lg p-6 bg-opacity-70 backdrop-blur-sm"
-            >
-              <h3 className="text-2xl font-bold mb-4 text-blue-500">Excellence</h3>
-              <p className="text-lg text-gray-600">
-                We strive for excellence in every project we undertake, ensuring that our solutions exceed expectations and deliver value.
-              </p>
-            </motion.div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+
+      {/* Our Story */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Our Story</h2>
+            <div className="prose prose-lg max-w-none text-gray-600">
+              <p className="text-xl leading-relaxed mb-8">
+                BLU-NOVA Tech Company was born from a shared vision of three technology enthusiasts who recognized the
+                immense potential for digital transformation across Africa. Founded in Kenya, we started with a simple
+                belief: that innovative technology solutions could drive meaningful change for businesses of all sizes.
+              </p>
+              <p className="text-lg leading-relaxed mb-8">
+                What began as late-night coding sessions and passionate discussions about the future of African tech has
+                evolved into a dynamic company that serves clients across the continent. Our journey has been marked by
+                continuous learning, adaptation, and an unwavering commitment to excellence.
+              </p>
+              <p className="text-lg leading-relaxed">
+                Today, we stand as a testament to what&apos;s possible when passion meets purpose. Every project we undertake
+                is an opportunity to contribute to Africa&apos;s digital future, and we&apos;re just getting started.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission & Vision */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            <Card className="border-0 shadow-lg">
+              <CardContent className="p-8">
+                <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                  <Target className="h-8 w-8 text-blue-600" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
+                <p className="text-gray-600 text-lg leading-relaxed">
+                  To innovate and deliver intelligent, scalable digital solutions that transform businesses across
+                  Africa. We&apos;re committed to bridging the technology gap and empowering organizations to thrive in the
+                  digital age.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-lg">
+              <CardContent className="p-8">
+                <div className="w-16 h-16 bg-blue-50 rounded-lg flex items-center justify-center mb-6">
+                  <Eye className="h-8 w-8 text-blue-600" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
+                <p className="text-gray-600 text-lg leading-relaxed">
+                  To be Africa&apos;s leading provider of reliable, secure, and customer-focused tech solutions. We envision
+                  a future where every business, regardless of size, has access to world-class technology that drives
+                  growth and innovation.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Core Values */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Core Values</h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              These values guide every decision we make and every solution we deliver
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {values.map((value, index) => (
+              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+                <CardContent className="p-8 text-center">
+                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <value.icon className="h-8 w-8 text-blue-600" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">{value.title}</h3>
+                  <p className="text-gray-600 leading-relaxed">{value.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Team Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              The passionate co-founders driving BLU-NOVA Tech Company forward
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {team.map((member, index) => (
+              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+                <CardContent className="p-8 text-center">
+                  <div className="w-32 h-32 bg-gradient-to-br from-blue-600 to-blue-800 rounded-full mx-auto mb-6 flex items-center justify-center">
+                    <span className="text-white text-4xl font-bold">
+                      {member.name
+                        .split(" ")
+                        .map((n) => n[0])
+                        .join("")}
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">{member.name}</h3>
+                  <p className="text-blue-600 font-medium mb-4">{member.role}</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">{member.responsibilities}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-r from-blue-50 to-blue-100 text-gray-900">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Work with Us?</h2>
+          <p className="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
+            Let&apos;s discuss how our team can help transform your business with innovative technology solutions
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4">
+              <Link href="/contact">Get in Touch</Link>
+            </Button>
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="border-white text-white hover:bg-white hover:text-blue-700 px-8 py-4 bg-transparent"
+            >
+              <Link href="/services">View Our Services</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
     </div>
-  );
+  )
 }
